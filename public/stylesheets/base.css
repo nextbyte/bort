@@ -1,48 +1,74 @@
 /* === FLASH MESSAGES === */
 div#flash-notice {
-	
+    background-color: #DFFAFF;
+    border: 1px solid #8EC4DF;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    margin: 0 auto 15px;
+    text-align: center;
 }
 
 div#flash-warning {
-	
+    background-color: #FFFFCC;
+    border: 1px solid #E0D300;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    margin: 0 auto 15px;
+    text-align: center;
 }
 
 div#flash-error {
-	
+    background-color: #FFDDDD;
+    border: 1px solid #FFBBBB;
 }
 
 /* === ERROR MESSAGES === */
 div#errorExplanation {
-	
 }
 
-div#errorExplanation h2 {
-	
+div#errorExplanation h2,div#box div#errorExplanation h2 {
+    background-color: #FFDDDD;
+	color:red;
+	font-size:1.5em;
+    border: 1px solid #FFBBBB;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
 }
 
 div#errorExplanation p {
-	
 }
 
 div#errorExplanation ul {
-	
+	list-style-type:none;
 }
 
 div#errorExplanation ul li {
-	
+    background-color: #FFDDDD;
+    border: 1px solid #FFBBBB;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    margin: 0 auto 5px;
+    text-align: center;
 }
 
 /* === FORMS === */
 div.fieldWithErrors {
-	
 }
 
 div.fieldWithErrors label {
-	
 }
 
-div.fieldWithErrors input, div.fieldWithErrors select, 
-div.fieldWithErrors textarea
-{
-	
+div.fieldWithErrors input, div.fieldWithErrors select, div.fieldWithErrors textarea {
 }

@@ -1,17 +1,24 @@
-<%= title "Forgot Your Password?", :h2 %>
-<% form_for @password do |f| %>
-  <%= f.error_messages %>
-	<fieldset>
-		<legend>Enter Your Email Address</legend>
-		<ol>
-			<li>			
-		    <%= f.label :email %>
-		    <%= f.text_field :email %>
-			</li>
-		</ol>
-	</fieldset>
-	<div class="buttons">
-  	<%= f.submit "Submit" %>
-	</div>
-<% end %>
-
+<div class="block">
+    <%= title "Forgot Your Password?", :h2 %>
+    <div class="content">
+        <div class="inner">
+            <% form_for @password, :html=>{:class=>:form} do |f| %>
+            <%= f.error_messages %>
+            <h3>Enter Your Email Address</h3>
+            <div class="group">
+                <div class="left">
+                    <%= f.label :email, 'Email', :class=>"label" %>
+                </div>
+                <div class="right">
+                    <%= f.text_field :email, :class=>:text_field %>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="group navform">
+                <%= f.submit "Submit", :class=>:button %>
+            </div>
+            <% end %>
+        </div>
+    </div>
+</div>

@@ -22,5 +22,5 @@ config.action_controller.allow_forgery_protection    = false
 config.action_mailer.delivery_method = :test
 
 # Restful Authentication
-REST_AUTH_SITE_KEY = 'f5945d1c74d3502f8a3de8562e5bf21fe3fec887'
+REST_AUTH_SITE_KEY = '3f5dde8562e5bf2e1cf5941fe74d3502f8a3c887'
 REST_AUTH_DIGEST_STRETCHES = 10

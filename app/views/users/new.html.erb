@@ -1,38 +1,62 @@
-<% @user.password = @user.password_confirmation = nil %>
-<%= title "Signup", :h2 %>
-<% form_for @user do |f| %>
-	<%= f.error_messages %>
-	<fieldset>
-		<legend>Your Details</legend>
-		<ol>
-			<li>
-				<%= f.label :login, 'Username' %>
-				<%= f.text_field :login %>
-			</li>
-			<li>
-				<%= f.label :email %>
-				<%= f.text_field :email %>
-			</li>
-			<li>
-				<%= f.label :password %>
-				<%= f.password_field :password %>
-			</li>
-			<li>
-				<%= f.label :password_confirmation, 'Confirm Password' %>
-				<%= f.password_field :password_confirmation %>
-			</li>
-		</ol>
-	</fieldset>
-	<fieldset>
-		<legend>Signup with OpenID</legend>
-		<ol>
-			<li>
-				<label for="openid_url">OpenID URL</label>
-				<%= text_field_tag :openid_url, params[:openid_url] || params['openid.identity'] %>
-			</li>
-		</ol>
-	</fieldset>
-	<div class="buttons">
-		<%= submit_tag 'Sign up' %>
-	</div>
-<% end %>
+<div class="block">
+    <%= title "Signup", :h2 %>
+    <% @user.password = @user.password_confirmation = nil %>
+    <div class="content">
+        <div class="inner">
+            <% form_for @user, :html=> { :class=>:form } do |f| %>
+            <%= f.error_messages %>
+            <div class="group">
+            	<div class="left">
+                <%= f.label :login, 'Username',:class=>:label %>
+                </div>
+                <div class="right">
+                <%= f.text_field :login, :class => "text_field" %>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="group">
+            	<div class="left">
+                <%= f.label :email,'Email', :class=>:label %>
+                </div>
+                <div class="right">
+                <%= f.text_field :email, :class => "text_field" %>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="group">
+            	<div class="left">
+                <%= f.label :password, 'Password', :class=>:label %>
+                </div>
+                <div class="right">
+                <%= f.password_field :password, :class => "text_field" %>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="group">
+            	<div class="left">
+                <%= f.label :password_confirmation, 'Confirm Password', :class=>:label %>
+                </div>
+                <div class="right">
+                <%= f.password_field :password_confirmation, :class => "text_field" %>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <%= title "Signup with OpenID", :h3 %>
+            <div class="group">
+            	<div class="left">
+                <label for="openid_url" class="label">
+                    OpenID URL
+                </label>
+                </div>
+                <div class="right">
+                <%= text_field_tag :openid_url, params[:openid_url] || params['openid.identity'], :class => "text_field" %>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="group navform">
+                <%= submit_tag 'Sign up',:class=>:button %>
+            </div>
+            <% end %>
+        </div>
+    </div>
+</div>

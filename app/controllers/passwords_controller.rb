@@ -1,4 +1,5 @@
 class PasswordsController < ApplicationController
+  layout 'guest'
   def new
     @password = Password.new
   end

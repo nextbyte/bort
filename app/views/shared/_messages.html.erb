@@ -1,0 +1,30 @@
+<% if flash[:error] || flash[:warning] || flash[:notice] then %>
+<div class="content">
+    <h3 class="title">Messages</h2>
+    <div class="inner">
+        <div class="flash">
+            <% if flash[:error] then %>
+            <div class="message error">
+                <p>
+                    <%= flash[:error] %>
+                </p>
+            </div>
+            <% end %>
+            <% if flash[:warning] then %>
+            <div class="message warning">
+                <p>
+                    <%= flash[:warning] %>
+                </p>
+            </div>
+            <% end %>
+            <% if flash[:notice] then %>
+            <div class="message notice">
+                <p>
+                    <%= flash[:notice] %>
+                </p>
+            </div>
+            <% end %>
+        </div>
+    </div>
+</div>
+<% end %>

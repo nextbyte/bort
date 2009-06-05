@@ -1,0 +1,11 @@
+<div class="secondary-navigation">
+    <ul>
+        <li class="active first">
+            <a href="#block-text">Option 1</a>
+        </li>
+        <li>
+            <a href="#block-tables">Option 2</a>
+        </li>
+    </ul>
+    <div class="clear"></div>
+</div>

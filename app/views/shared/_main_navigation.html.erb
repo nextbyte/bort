@@ -1,0 +1,9 @@
+<div id="main-navigation">
+	<% if logged_in? && current_user.has_role?("admin") then %>
+    <%= easy_navigation :admin, options = {} %>
+	<% else %>
+    <%= easy_navigation :default, options = {} %>
+	<% end %>
+    <div class="clear">
+    </div>
+</div>

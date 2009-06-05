@@ -9,6 +9,7 @@ ActionController::Routing::Routes.draw do |map|
   map.change_password '/change_password/:reset_code', :controller => 'passwords', :action => 'reset'
   map.open_id_complete '/opensession', :controller => "sessions", :action => "create", :requirements => { :method => :get }
   map.open_id_create '/opencreate', :controller => "users", :action => "create", :requirements => { :method => :get }
+  map.admin '/admin', :controller => 'admin/home', :action => 'index'
   
   # Restful Authentication Resources
   map.resources :users
@@ -16,9 +17,10 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
   
   # Home Page
-  map.root :controller => 'sessions', :action => 'new'
+  map.root :controller => 'home', :action => 'index'
 
   # Install the default routes as the lowest priority.
+  map.connect ':controller/:action'
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 end
