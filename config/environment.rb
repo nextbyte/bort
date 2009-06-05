@@ -75,7 +75,6 @@ Rails::Initializer.run do |config|
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   config.active_record.observers = :user_observer
   
-  config.action_mailer.delivery_method = :smtp
+  # Uncomment next line to send through smtp
+  #config.action_mailer.delivery_method = :smtp
 end
-
-ActionMailer::Base.smtp_settings = YAML.load_file("#{RAILS_ROOT}/config/email.yml")[RAILS_ENV].symbolize_keys
