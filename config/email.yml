@@ -1,0 +1,12 @@
+development:
+  address: relay.rdslink.ro
+  port: 25
+#  :authentication: plain
+#  :user_name: user
+#  :password: pass
+production:
+  address: relay.rdslink.ro
+  port: 25
+#  :authentication: plain
+#  :user_name: user
+#  :password: pass
