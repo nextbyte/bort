@@ -6,6 +6,8 @@ Bort is a base Rails 2.2 application that makes creating new projects easier and
 
 If you have any suggestions for improvements then feel free to leave a request on "User Voice":http://bort.uservoice.com
 
+I've applied web app theme to the application and all views were updated to feet the look and feel.
+
 h2. Install
 
 * Download and unzip Bort
@@ -53,6 +55,10 @@ h3. Asset Packager
 
 Packages up your css/javascript so you're not sending 143 files down to the user at the same time. Reduces
 load times and saves you bandwidth.
+
+h3. Easy Navigation
+
+A default menu is created also a separate menu for admins. Added 2 helpers to fit web app theme navigation style ( tabs + secondary navigation ). Added one line to plugin's core lib to add first to css class.
 
 h2. Routes
 
