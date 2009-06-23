@@ -1,0 +1,284 @@
+body {
+  color:#222222;
+  font-size:12px;
+}
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+.active-scaffold {
+	font-family: inherit;
+}
+
+.active-scaffold-header h2 {
+	color: #007BA7;
+}
+
+.active-scaffold table {
+	border-collapse:collapse;
+}
+
+.active-scaffold th, .active-scaffold .sub-form table th {
+	background:#C2C8D1 none repeat scroll 0 0;
+	color:#001C26;
+	font-weight: bold; 
+	outline: none;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size:12px;
+	text-align: left;
+}
+
+.active-scaffold th {
+	padding:10px;
+}
+
+.active-scaffold span {
+	padding:2px 15px 2px 5px;	
+}
+
+.active-scaffold th a,.active-scaffold .sub-form table th a {
+	color:#001C26;
+	background: transparent;
+	font-family: inherit;
+	padding:0;
+	font-size:12px;
+}
+
+.active-scaffold a:hover {
+	color:#007BA7;
+	background-color: transparent;
+}
+
+.active-scaffold th a:hover, .active-scaffold-header div.actions a.new_existing:hover, .active-scaffold-header div.actions a.show_search:hover, .active-scaffold-header div.actions a.new:hover {
+	color:#001C26;
+	background-color: transparent;
+	opacity: 0.7;
+}
+
+.active-scaffold th.asc a, .active-scaffold th.asc a:hover {
+	background:transparent url(/images/icons/arrow_up.png) no-repeat scroll right 50%;		
+}
+	
+.active-scaffold th.desc a, .active-scaffold th.desc a:hover {
+	background:transparent url(/images/icons/arrow_down.png) no-repeat scroll right 50%;		
+}
+
+.active-scaffold th.sorted {
+	background:#2191C0 url(/images/ui-bg_gloss-wave_75_2191c0_500x100.png) repeat-x scroll 50% 50%;
+	border:none;
+	color:#EAF5F7;
+	font-weight:bold;	
+}
+.active-scaffold tr.record td {
+	border-left: none;
+	border-bottom:2px solid #EEF0F0;
+	padding: 7px 10px;
+	background-color: transparent;
+}
+.active-scaffold tr.record td.sorted {
+	padding: 7px 10px;
+	background:#DFEFFC;
+	border-left:none;
+	border-bottom:2px solid #EEF0F0;
+}
+.active-scaffold-header div.actions a.new, .active-scaffold-header div.actions a.new_existing {
+	background-image:url(/images/icons/plus.gif);
+	color:#EAF5F7;
+}
+.active-scaffold-header div.actions a.show_search {
+	color:#EAF5F7;
+}
+
+.active-scaffold-header div.actions a {
+	font-family: inherit;
+	font-size: inherit;
+	letter-spacing:normal;
+}
+
+.active-scaffold tr.record td.actions {
+	padding: 4px 5px;
+	border-right:none;
+}
+
+.active-scaffold-header div.actions {
+	background:#005573 repeat-x scroll 50% 50%;
+	border:1px solid #005573;
+	color:#FFFFFF;
+	font-weight:normal;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+	padding: 4px;
+	top: -3px;
+	right: 0px;
+}
+
+.active-scaffold .sub-form .association-record a.destroy {
+	margin: 0 0 0 5px;
+}
+
+input, .active-scaffold .sub-form input.text-input, .active-scaffold .sub-form select, .active-scaffold input.text-input, .active-scaffold select, .active-scaffold .sub-form .footer select, .active-scaffold .sub-form .footer input,.active-scaffold textarea {
+	margin:0;
+	padding:2px;
+	font-weight:normal;
+	letter-spacing:normal;
+	font-size:13px;
+	font-family: "Lucida Grande";
+}
+
+.active-scaffold input.text-input {
+/*	width:100%;*/
+	border:1px solid #001C26;	
+	font-family: "Lucida Grande";
+	font-size:1.2em;
+}
+
+.search input.text-input {
+	width:inherit;
+}
+.sub-form a {
+	color: white;
+}
+
+.active-scaffold label {
+	display:block;
+	font-weight:bold;
+	padding-bottom:2px;
+	font-size:1.2em;
+	margin:0;
+	padding:1px 0;
+	color: inherit;
+	font-family: inherit;
+}
+
+.active-scaffold .submit, input[type=button] {
+	background:#EEEEEE none repeat scroll 0 0;
+	border:1px solid #001C26;
+	color:#001C26;
+	cursor:pointer;
+	padding:2px 5px;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+	-moz-border-radius-bottomleft:4px;
+	-moz-border-radius-bottomright:4px;
+	font-size:inherit;
+}
+.active-scaffold a.cancel, .active-scaffold p.form-footer a {
+	cursor:pointer;
+	font-family:inherit;
+	font-size:inherit;
+}
+
+.active-scaffold a.cancel, .active-scaffold p.form-footer a {
+	overflow:visible;
+	padding:0.4em;
+}
+
+.active-scaffold .submit:hover, .active-scaffold a.cancel:hover, .active-scaffold p.form-footer a:hover {
+	opacity: 1;
+}
+
+.active-scaffold li.form-element dt {
+	padding:inherit;
+}
+
+.active-scaffold .view {
+	background-color: transparent;
+	margin:0px;
+	border: 1px solid #C2C8D1;
+}
+
+.active-scaffold h4, .active-scaffold h5 {
+	-moz-user-select:none;
+	padding:0.5em 0.3em 0.3em 1em;
+	background:#005573;
+	border:1px solid #005573;
+	color:#EAF5F7;
+	font-weight:bold;
+}
+
+.active-scaffold h4 {
+	font-family:inherit;
+}
+
+.active-scaffold h5 {
+	font-size: 0.9em;
+	font-family:inherit;
+}
+
+.active-scaffold tr.record td {
+	font-family: inherit;
+	font-size:inherit;
+}
+.active-scaffold a.inline-adapter-close {
+	-moz-user-select:none;
+	display:block;
+	margin:1px;
+	background-image:url(/images/ui-icons_d8e7f3_256x240.png);
+	background-position:-96px -128px;
+	height:16px;
+	width:16px;
+	overflow:hidden;
+	text-indent:-99999px;
+	color:#222222;
+}
+
+.active-scaffold a.inline-adapter-close:hover {
+	background-image: url(/images/ui-icons_056b93_256x240.png);
+}
+
+.active-scaffold tr.record td.actions a {
+	margin:0;
+	padding:0;
+	font-family: inherit;
+	font-weight: normal;
+	letter-spacing: normal;
+	font-size: 12px;
+}
+
+.quantity-input {
+    width: 50px;
+}
+
+.active-scaffold .price-input {
+    width: 30px;
+}
